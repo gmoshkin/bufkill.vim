@@ -67,6 +67,8 @@
 "   last view in that file.
 
 " Changelog:
+" 1.11 - Added options to disable default key mappings and options for setting
+"        custom key mappings
 " 1.10 - Various fixes, eg relating to quicklists
 " 1.9  - Remove unnecessary mapping delays, and a debug message
 " 1.8  - Improved mapping handling, and robustness
