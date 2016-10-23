@@ -243,6 +243,47 @@ function! <SID>CreateUniqueMapping(lhs, rhs, ...)
   exec 'nmap <silent> <unique> '.a:lhs.' '.a:rhs
 endfunction
 
+" Default plugin key mappings {{{2
+if exists('g:BufKillBackKey')
+  call <SID>CreateUniqueMapping(g:BufKillBackKey, '<Plug>BufKillBack')
+endif
+
+if exists('g:BufKillForwardKey')
+  call <SID>CreateUniqueMapping(g:BufKillForwardKey, '<Plug>BufKillForward')
+endif
+
+if exists('g:BufKillBunKey')
+  call <SID>CreateUniqueMapping(g:BufKillBunKey, '<Plug>BufKillBun')
+endif
+
+if exists('g:BufKillBangBunKey')
+  call <SID>CreateUniqueMapping(g:BufKillBangBunKey, '<Plug>BufKillBangBun')
+endif
+
+if exists('g:BufKillBdKey')
+  call <SID>CreateUniqueMapping(g:BufKillBdKey, '<Plug>BufKillBd')
+endif
+
+if exists('g:BufKillBangBdKey')
+  call <SID>CreateUniqueMapping(g:BufKillBangBdKey, '<Plug>BufKillBangBd')
+endif
+
+if exists('g:BufKillBwKey')
+  call <SID>CreateUniqueMapping(g:BufKillBwKey, '<Plug>BufKillBw')
+endif
+
+if exists('g:BufKillBangBwKey')
+  call <SID>CreateUniqueMapping(g:BufKillBangBwKey, '<Plug>BufKillBangBw')
+endif
+
+if exists('g:BufKillUndoKey')
+  call <SID>CreateUniqueMapping(g:BufKillUndoKey, '<Plug>BufKillUndo')
+endif
+
+if exists('g:BufKillAltKey')
+  call <SID>CreateUniqueMapping(g:BufKillAltKey, '<Plug>BufKillAlt')
+endif
+
 if g:BufKillKeyMappings
   call <SID>CreateUniqueMapping('<Leader>bb',   '<Plug>BufKillBack')
   call <SID>CreateUniqueMapping('<Leader>bf',   '<Plug>BufKillForward')
